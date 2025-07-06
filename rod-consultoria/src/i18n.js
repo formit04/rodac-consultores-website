@@ -10,11 +10,12 @@ const resources = {
         services: 'Servicios',
         blog: 'Blog',
         contact: 'Contacto',
+        aiConsultant: 'Chat24',
         cta: 'Agendar Consulta'
       },
       hero: {
         subtitle: 'TU ALIADO ESTRATÉGICO EN CONSULTORÍA FISCAL',
-        title: 'Rodac Consultores: Certeza y Blindaje para tu Patrimonio.',
+        title: 'Rodac Consultores\nCerteza y Blindaje para tu Patrimonio.',
         desc: 'En Rodac Consultores convertimos la complejidad fiscal en tu mayor fortaleza. Duerme tranquilo, nosotros nos encargamos del SAT.',
         cta1: 'Agendar Diagnóstico Confidencial',
         cta2: 'Explorar Servicios'
@@ -81,6 +82,11 @@ const resources = {
       footer: {
         tagline: 'Consultoría fiscal y contable de confianza.',
         services: 'Servicios',
+        servicesList: {
+          asesoria: 'Asesoría Fiscal',
+          contabilidad: 'Contabilidad',
+          auditoria: 'Auditoría'
+        },
         contact: 'Contacto',
         copyright: '© 2025 Rodac Consultores. Todos los derechos reservados.'
       },
@@ -198,7 +204,16 @@ const resources = {
           title: 'Hablemos de tu caso específico.',
           desc: 'Cada empresa es un mundo. Contacta a nuestros especialistas para una evaluación confidencial de tu situación.',
           button: 'Contactar a un Asesor'
-        }
+        },
+        overview: {
+          asesoria: 'Asesoría Fiscal y Legal',
+          contabilidad: 'Contabilidad Estratégica',
+          auditoria: 'Auditoría y Dictámenes'
+        },
+        includesTitle: 'Lo que incluye:',
+        idealForTitle: 'Ideal para ti si:',
+        mainServicesTitle: 'Nuestros Servicios Principales',
+        learnMore: 'Conocer más'
       },
       blog: {
         hero: {
@@ -233,6 +248,7 @@ const resources = {
           phone: 'Teléfono',
           email: 'Email',
           hours: 'Horarios de Atención',
+          hoursValue: 'Lun - Vie: 9:00 AM - 6:00 PM',
           location: 'Ubicación',
           locationDesc: 'Oficina central en el corazón de Guadalajara, fácil acceso y estacionamiento disponible.',
           mapButton: 'Ver en Google Maps'
@@ -245,6 +261,12 @@ const resources = {
           phone: 'Teléfono',
           company: 'Nombre de la empresa',
           service: 'Servicio de interés',
+          serviceOptions: {
+            placeholder: 'Seleccionar servicio',
+            asesoria: 'Asesoría Fiscal',
+            contabilidad: 'Contabilidad',
+            auditoria: 'Auditoría'
+          },
           message: 'Mensaje *',
           messagePlaceholder: 'Cuéntanos sobre tu situación y cómo podemos ayudarte...',
           submit: 'Enviar Mensaje Confidencial',
@@ -265,6 +287,38 @@ const resources = {
           q4: '¿Cuál es el costo de sus servicios?',
           a4: 'Nuestros servicios se adaptan a las necesidades específicas de cada cliente. La primera consulta es gratuita para evaluar tu situación.'
         }
+      },
+      aiConsultant: {
+        hero: {
+          title: 'Chat24 - Consultor Especializado',
+          desc: 'Obtén respuestas expertas sobre contabilidad y fiscalidad mexicana las 24 horas del día. Nuestro asistente está especializado en normativas del SAT, IMSS e INFONAVIT.'
+        },
+        chat: {
+          title: 'Chatea con nuestro Experto en Fiscalidad',
+          placeholder: 'Escribe tu pregunta sobre contabilidad o fiscalidad mexicana...',
+          send: 'Enviar',
+          thinking: 'Pensando...',
+          welcome: '¡Hola! Soy tu consultor especializado en contabilidad y fiscalidad mexicana. Puedo ayudarte con preguntas sobre:',
+          capabilities: [
+            'Normativas del SAT y obligaciones fiscales',
+            'Contabilidad para personas físicas y morales',
+            'IMSS, INFONAVIT y seguridad social',
+            'Facturación electrónica y CFDI',
+            'Deducciones y optimización fiscal',
+            'Auditorías y cumplimiento normativo'
+          ],
+          askQuestion: '¿En qué puedo ayudarte hoy?',
+          examples: {
+            title: 'Preguntas frecuentes:',
+            questions: [
+              '¿Cuáles son las obligaciones fiscales para una persona moral?',
+              '¿Cómo puedo optimizar mis deducciones fiscales?',
+              '¿Qué documentos necesito para una auditoría del SAT?',
+              '¿Cuándo debo presentar mi declaración anual?'
+            ]
+          },
+          disclaimer: 'Este asistente proporciona información general. Para casos específicos, consulta con nuestros especialistas.'
+        }
       }
     }
   },
@@ -276,11 +330,12 @@ const resources = {
         services: 'Services',
         blog: 'Blog',
         contact: 'Contact',
+        aiConsultant: 'Chat24',
         cta: 'Book a Consultation'
       },
       hero: {
         subtitle: 'YOUR STRATEGIC PARTNER IN TAX CONSULTING',
-        title: 'Rodac Consultores: Certainty and Protection for Your Assets.',
+        title: 'Rodac Consultores\nCertainty and Protection for Your Assets.',
         desc: 'At Rodac Consultores, we turn tax complexity into your greatest strength. Sleep well, we handle the tax office for you.',
         cta1: 'Book a Confidential Assessment',
         cta2: 'Explore Services'
@@ -347,6 +402,11 @@ const resources = {
       footer: {
         tagline: 'Trusted tax and accounting consulting.',
         services: 'Services',
+        servicesList: {
+          asesoria: 'Tax Advisory',
+          contabilidad: 'Accounting',
+          auditoria: 'Audit'
+        },
         contact: 'Contact',
         copyright: '© 2025 Rodac Consultores. All rights reserved.'
       },
@@ -464,7 +524,16 @@ const resources = {
           title: 'Let\'s talk about your specific case.',
           desc: 'Every company is a world. Contact our specialists for a confidential evaluation of your situation.',
           button: 'Contact an Advisor'
-        }
+        },
+        overview: {
+          asesoria: 'Tax and Legal Advisory',
+          contabilidad: 'Strategic Accounting',
+          auditoria: 'Audit and Reports'
+        },
+        includesTitle: 'What\'s included:',
+        idealForTitle: 'Ideal for you if:',
+        mainServicesTitle: 'Our Main Services',
+        learnMore: 'Learn more'
       },
       blog: {
         hero: {
@@ -499,6 +568,7 @@ const resources = {
           phone: 'Phone',
           email: 'Email',
           hours: 'Business Hours',
+          hoursValue: 'Mon - Fri: 9:00 AM - 6:00 PM',
           location: 'Location',
           locationDesc: 'Central office in the heart of Guadalajara, easy access and parking available.',
           mapButton: 'View on Google Maps'
@@ -511,6 +581,12 @@ const resources = {
           phone: 'Phone',
           company: 'Company name',
           service: 'Service of interest',
+          serviceOptions: {
+            placeholder: 'Select service',
+            asesoria: 'Tax Advisory',
+            contabilidad: 'Accounting',
+            auditoria: 'Audit'
+          },
           message: 'Message *',
           messagePlaceholder: 'Tell us about your situation and how we can help you...',
           submit: 'Send Confidential Message',
@@ -531,6 +607,38 @@ const resources = {
           q4: 'What is the cost of your services?',
           a4: 'Our services are tailored to the specific needs of each client. The first consultation is free to evaluate your situation.'
         }
+      },
+      aiConsultant: {
+        hero: {
+          title: 'Chat24 - Specialized Consultant',
+          desc: 'Get expert answers about Mexican accounting and taxation 24/7. Our assistant specializes in SAT, IMSS and INFONAVIT regulations.'
+        },
+        chat: {
+          title: 'Chat with our Tax Expert',
+          placeholder: 'Type your question about Mexican accounting or taxation...',
+          send: 'Send',
+          thinking: 'Thinking...',
+          welcome: 'Hello! I\'m your specialized consultant in Mexican accounting and taxation. I can help you with questions about:',
+          capabilities: [
+            'SAT regulations and tax obligations',
+            'Accounting for individuals and corporations',
+            'IMSS, INFONAVIT and social security',
+            'Electronic invoicing and CFDI',
+            'Deductions and tax optimization',
+            'Audits and regulatory compliance'
+          ],
+          askQuestion: 'How can I help you today?',
+          examples: {
+            title: 'Frequently asked questions:',
+            questions: [
+              'What are the tax obligations for a corporation?',
+              'How can I optimize my tax deductions?',
+              'What documents do I need for a SAT audit?',
+              'When should I file my annual tax return?'
+            ]
+          },
+          disclaimer: 'This assistant provides general information. For specific cases, consult with our specialists.'
+        }
       }
     }
   }
@@ -544,6 +652,9 @@ i18n
     fallbackLng: 'es',
     interpolation: {
       escapeValue: false
+    },
+    react: {
+      useSuspense: false
     }
   });
 

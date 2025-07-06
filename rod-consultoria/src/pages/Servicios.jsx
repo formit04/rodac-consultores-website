@@ -85,7 +85,7 @@ const Servicios = () => {
 
                 <div className="service-details">
                   <div className="features-section">
-                    <h4>Lo que incluye:</h4>
+                    <h4>{t('servicesPage.includesTitle', 'Lo que incluye:')}</h4>
                     <ul>
                       {service.features.map((feature, index) => (
                         <li key={index}>{feature}</li>
@@ -94,7 +94,7 @@ const Servicios = () => {
                   </div>
 
                   <div className="ideal-for-section">
-                    <h4>Ideal para ti si:</h4>
+                    <h4>{t('servicesPage.idealForTitle', 'Ideal para ti si:')}</h4>
                     <ul>
                       {service.idealFor.map((item, index) => (
                         <li key={index}>{item}</li>
@@ -124,25 +124,25 @@ const Servicios = () => {
       {/* ALL SERVICES OVERVIEW */}
       <section className="all-services">
         <div className="container">
-          <h2>Nuestros Servicios Principales</h2>
+          <h2>{t('servicesPage.mainServicesTitle', 'Nuestros Servicios Principales')}</h2>
           <div className="services-overview">
             <div className="service-card">
               <div className="service-icon">🛡️</div>
-              <h3>Asesoría Fiscal y Legal</h3>
-              <p>Anticipamos riesgos y creamos oportunidades. Tu defensa y estrategia ante el SAT.</p>
-              <Link to="/servicios" className="service-link">Conocer más →</Link>
+              <h3>{t('servicesPage.overview.asesoria')}</h3>
+              <p>{t('services.asesoria.desc')}</p>
+              <Link to="/servicios" className="service-link">{t('servicesPage.learnMore', 'Conocer más')} →</Link>
             </div>
             <div className="service-card">
               <div className="service-icon">📊</div>
-              <h3>Contabilidad Estratégica</h3>
-              <p>Más que números, es el mapa financiero de tu negocio. Precisión y cumplimiento total.</p>
-              <Link to="/servicios" className="service-link">Conocer más →</Link>
+              <h3>{t('servicesPage.overview.contabilidad')}</h3>
+              <p>{t('services.contabilidad.desc')}</p>
+              <Link to="/servicios" className="service-link">{t('servicesPage.learnMore', 'Conocer más')} →</Link>
             </div>
             <div className="service-card">
               <div className="service-icon">🔍</div>
-              <h3>Auditoría y Dictámenes</h3>
-              <p>Validación y certeza para directivos, socios e inversionistas. La máxima confianza en tu información.</p>
-              <Link to="/servicios" className="service-link">Conocer más →</Link>
+              <h3>{t('servicesPage.overview.auditoria')}</h3>
+              <p>{t('services.auditoria.desc')}</p>
+              <Link to="/servicios" className="service-link">{t('servicesPage.learnMore', 'Conocer más')} →</Link>
             </div>
           </div>
         </div>

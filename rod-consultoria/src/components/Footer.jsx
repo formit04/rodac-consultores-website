@@ -19,9 +19,9 @@ const Footer = () => {
           <div className="footer-section">
             <h4>{t('footer.services')}</h4>
             <ul>
-              <li><Link to="/servicios">Asesoría Fiscal</Link></li>
-              <li><Link to="/servicios">Contabilidad</Link></li>
-              <li><Link to="/servicios">Auditoría</Link></li>
+                          <li><Link to="/servicios">{t('footer.servicesList.asesoria')}</Link></li>
+            <li><Link to="/servicios">{t('footer.servicesList.contabilidad')}</Link></li>
+            <li><Link to="/servicios">{t('footer.servicesList.auditoria')}</Link></li>
             </ul>
           </div>
           
@@ -30,6 +30,7 @@ const Footer = () => {
             <ul>
               <li><Link to="/contacto">Contacto</Link></li>
               <li><Link to="/nosotros">Sobre Nosotros</Link></li>
+              <li><Link to="/chat24">{t('nav.aiConsultant')}</Link></li>
               <li><Link to="/blog">Blog</Link></li>
             </ul>
           </div>

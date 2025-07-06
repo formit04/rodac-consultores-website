@@ -39,6 +39,17 @@ The official logo is located at `/public/logo-rodac.svg`.
 2. Navigate to the project directory: `cd rod-consultoria`
 3. Install dependencies: `npm install`
 
+### Environment Variables
+
+For the AI Consultant feature, you need to set up a Gemini API key:
+
+1. Create a `.env` file in the root directory
+2. Add your Gemini API key:
+```
+REACT_APP_GEMINI_API_KEY=your_gemini_api_key_here
+```
+3. Get your API key from: https://makersuite.google.com/app/apikey
+
 ### Running the Development Server
 
 To run the app in development mode, use:

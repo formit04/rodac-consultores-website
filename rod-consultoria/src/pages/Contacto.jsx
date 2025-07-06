@@ -125,18 +125,26 @@ const Contacto = () => {
                   <div className="contact-icon">🕒</div>
                   <div className="contact-text">
                     <h4>{t('contact.info.hours')}</h4>
-                    <p>Lun - Vie: 9:00 AM - 6:00 PM</p>
+                    <p>{t('contact.info.hoursValue')}</p>
                   </div>
                 </div>
               </div>
 
-              <div className="map-placeholder">
-                <div className="map-content">
-                  <span className="map-icon">🗺️</span>
-                  <h4>{t('contact.info.location')}</h4>
-                  <p>{t('contact.info.locationDesc')}</p>
-                  <button className="map-button">{t('contact.info.mapButton')}</button>
+              <div className="map-container">
+                <h4>{t('contact.info.location')}</h4>
+                <div className="map-wrapper">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59721.827237493!2d-103.39182!3d20.659699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b18cb6a51d97%3A0x4e2ccfe1107b9e2d!2sGuadalajara%2C%20Jal.%2C%20Mexico!5e0!3m2!1ses!2smx!4v1641234567890!5m2!1ses!2smx"
+                    width="100%"
+                    height="300"
+                    style={{ border: 0, borderRadius: '8px' }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Ubicación de Rodac Consultores en Guadalajara"
+                  ></iframe>
                 </div>
+                <p className="map-description">{t('contact.info.locationDesc')}</p>
               </div>
             </div>
 
@@ -209,10 +217,10 @@ const Contacto = () => {
                       value={formData.service}
                       onChange={handleInputChange}
                     >
-                      <option value="">Seleccionar servicio</option>
-                      <option value="asesoria">Asesoría Fiscal</option>
-                      <option value="contabilidad">Contabilidad</option>
-                      <option value="auditoria">Auditoría</option>
+                      <option value="">{t('contact.form.serviceOptions.placeholder')}</option>
+                      <option value="asesoria">{t('contact.form.serviceOptions.asesoria')}</option>
+                      <option value="contabilidad">{t('contact.form.serviceOptions.contabilidad')}</option>
+                      <option value="auditoria">{t('contact.form.serviceOptions.auditoria')}</option>
                     </select>
                   </div>
 
