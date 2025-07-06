@@ -4,10 +4,12 @@ import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Logo from '../components/Logo';
+import usePageScroll from '../hooks/usePageScroll';
 
 const Servicios = () => {
   const [activeTab, setActiveTab] = useState('asesoria');
   const { t } = useTranslation();
+  usePageScroll();
 
   const services = [
     {
@@ -55,7 +57,7 @@ const Servicios = () => {
       </div>
 
       {/* SERVICES NAVIGATION */}
-      <section className="services-tabs">
+      <section className="services-tabs" id="main-content">
         <div className="container">
           <div className="tabs-header">
             {services.map((service) => (

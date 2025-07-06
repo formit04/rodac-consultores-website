@@ -3,9 +3,11 @@ import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Logo from '../components/Logo';
+import usePageScroll from '../hooks/usePageScroll';
 
 const Nosotros = () => {
   const { t } = useTranslation();
+  usePageScroll();
 
   return (
     <div className="app">
@@ -26,7 +28,7 @@ const Nosotros = () => {
       </div>
 
       {/* ABOUT CONTENT */}
-      <section className="about-page">
+      <section className="about-page" id="main-content">
         <div className="container">
           <div className="about-content">
             <div className="about-text">

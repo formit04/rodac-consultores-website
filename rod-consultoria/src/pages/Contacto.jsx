@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Logo from '../components/Logo';
+import usePageScroll from '../hooks/usePageScroll';
 
 const Contacto = () => {
   const [formData, setFormData] = useState({
@@ -18,6 +19,7 @@ const Contacto = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const { t } = useTranslation();
   const location = useLocation();
+  usePageScroll();
 
   // Scroll to contact form when hash is present
   useEffect(() => {
@@ -86,7 +88,7 @@ const Contacto = () => {
       </div>
 
       {/* CONTACT CONTENT */}
-      <section className="contact-page">
+      <section className="contact-page" id="main-content">
         <div className="container">
           <div className="contact-content">
             {/* LEFT COLUMN - CONTACT INFO */}

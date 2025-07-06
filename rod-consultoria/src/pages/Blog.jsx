@@ -4,10 +4,12 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Logo from '../components/Logo';
 import { useTranslation } from 'react-i18next';
+import usePageScroll from '../hooks/usePageScroll';
 
 const Blog = () => {
   const [activeCategory, setActiveCategory] = useState('all');
   const { t } = useTranslation();
+  usePageScroll();
 
   const categories = [
     { id: 'all', name: t('blog.categories.all') },
@@ -75,7 +77,7 @@ const Blog = () => {
       </div>
 
       {/* FEATURED ARTICLES */}
-      <section className="featured-articles">
+      <section className="featured-articles" id="main-content">
         <div className="container">
           <h2>Artículos Destacados</h2>
           <div className="featured-grid">
