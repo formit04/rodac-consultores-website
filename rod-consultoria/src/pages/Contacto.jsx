@@ -25,9 +25,13 @@ const Contacto = () => {
       const timer = setTimeout(() => {
         const element = document.getElementById('contact-form');
         if (element) {
-          element.scrollIntoView({ 
-            behavior: 'smooth',
-            block: 'start'
+          // Calculate offset to show the section title
+          const elementRect = element.getBoundingClientRect();
+          const offset = window.pageYOffset + elementRect.top - 100; // 100px offset from top
+          
+          window.scrollTo({
+            top: offset,
+            behavior: 'smooth'
           });
         }
       }, 100); // Small delay to ensure page is fully rendered
