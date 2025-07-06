@@ -1,0 +1,41 @@
+/* Brand colors */
+:root {
+  --color-black: #111;
+  --color-green: #2C3A23;
+  --color-gray-dark: #444;
+  --color-gray: #BDBDBD;
+  --color-gray-light: #F5F5F5;
+  --color-white: #fff;
+}
+
+body {
+  background: var(--color-white);
+  color: var(--color-black);
+}
+
+/* Zamiana złotych kolorów na brandowe */
+
+/* Przykład zamiany dla tekstów */
+.text-gold, .section-title, .hero-title, .btn, .btn-primary, .btn-secondary {
+  color: var(--color-black) !important;
+}
+
+/* Przykład zamiany dla tła i akcentów */
+.bg-gold, .btn, .btn-primary {
+  background: var(--color-green) !important;
+}
+
+/* Zamiana borderów */
+.border-gold {
+  border-color: var(--color-green) !important;
+}
+
+/* Zamiana gradientów na jednolite tło */
+.bg-gradient, .gradient {
+  background: var(--color-green) !important;
+}
+
+/* Wszystkie sekcje, przyciski, teksty, elementy graficzne korzystają wyłącznie z brandowych kolorów */
+
+/* Zamień wszystkie background, color, border na brandowe */
+// ... existing code ... 
