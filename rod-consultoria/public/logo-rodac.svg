@@ -1,0 +1,13 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Vertical bar (left side of R) -->
+  <rect x="30" y="30" width="24" height="140" fill="black"/>
+  
+  <!-- Top horizontal bar -->
+  <rect x="30" y="30" width="100" height="24" fill="black"/>
+  
+  <!-- Diagonal leg (bottom right) -->
+  <polygon 
+    points="70,90 130,170 150,160 90,80" 
+    fill="black"
+  />
+</svg> 
