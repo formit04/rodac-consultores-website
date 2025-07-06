@@ -5,7 +5,6 @@ import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Logo from '../components/Logo';
-import heroBg from '../assets/hero-bg.jpg';
 
 const Home = () => {
   const [activeService, setActiveService] = useState('asesoria');
