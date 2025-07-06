@@ -13,7 +13,7 @@ const Nosotros = () => {
       <div className="brand-rect"></div>
       
       {/* HERO SECTION */}
-      <section className="page-hero">
+      <section className="page-hero nosotros-hero">
         <div className="container">
           <div className="hero-content">
             <h1>{t('about.hero.title')}</h1>

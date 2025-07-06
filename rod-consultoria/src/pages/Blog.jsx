@@ -61,7 +61,7 @@ const Blog = () => {
       <Header />
       
       {/* HERO SECTION */}
-      <section className="page-hero">
+      <section className="page-hero blog-hero">
         <div className="container">
           <div className="brand-rect"></div>
           <div className="hero-content">

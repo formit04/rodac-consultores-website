@@ -49,7 +49,7 @@ const Contacto = () => {
       <Header />
       
       {/* HERO SECTION */}
-      <section className="page-hero">
+      <section className="page-hero contacto-hero">
         <div className="container">
           <div className="brand-rect"></div>
           <div className="hero-content">

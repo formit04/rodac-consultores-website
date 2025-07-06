@@ -41,7 +41,7 @@ const Servicios = () => {
       <Header />
       
       {/* HERO SECTION */}
-      <section className="page-hero">
+      <section className="page-hero servicios-hero">
         <div className="container">
           <div className="brand-rect"></div>
           <div className="hero-content">
