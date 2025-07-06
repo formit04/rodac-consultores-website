@@ -234,7 +234,38 @@ a:hover {
               url('https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
 }
 
-.hero::before {
+/* ENSURE WHITE TEXT FOR ALL SUBPAGES */
+.nosotros-hero, .servicios-hero, .blog-hero, .contacto-hero {
+  color: var(--color-white);
+}
+
+.nosotros-hero h1, .servicios-hero h1, .blog-hero h1, .contacto-hero h1,
+.nosotros-hero .hero-title, .servicios-hero .hero-title, .blog-hero .hero-title, .contacto-hero .hero-title {
+  color: var(--color-white) !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.nosotros-hero p, .servicios-hero p, .blog-hero p, .contacto-hero p,
+.nosotros-hero .hero-desc, .servicios-hero .hero-desc, .blog-hero .hero-desc, .contacto-hero .hero-desc {
+  color: rgba(255, 255, 255, 0.95) !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.nosotros-hero .hero-subtitle, .servicios-hero .hero-subtitle, .blog-hero .hero-subtitle, .contacto-hero .hero-subtitle {
+  color: rgba(255, 255, 255, 0.9) !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.nosotros-hero .brand-rect, .servicios-hero .brand-rect, .blog-hero .brand-rect, .contacto-hero .brand-rect {
+  background: var(--color-white);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero::before,
+.nosotros-hero::before,
+.servicios-hero::before,
+.blog-hero::before,
+.contacto-hero::before {
   content: '';
   position: absolute;
   top: 0;
@@ -245,12 +276,20 @@ a:hover {
   z-index: 1;
 }
 
-.hero .container {
+.hero .container,
+.nosotros-hero .container,
+.servicios-hero .container,
+.blog-hero .container,
+.contacto-hero .container {
   position: relative;
   z-index: 2;
 }
 
-.hero .hero-content {
+.hero .hero-content,
+.nosotros-hero .hero-content,
+.servicios-hero .hero-content,
+.blog-hero .hero-content,
+.contacto-hero .hero-content {
   position: relative;
   z-index: 3;
 }
