@@ -45,7 +45,7 @@ const Header = () => {
               </button>
             </div>
             
-            <NavLink to="/contacto" className="btn btn-primary">
+            <NavLink to="/contacto#contact-form" className="btn btn-primary">
               {t('nav.cta')}
             </NavLink>
             

@@ -23,7 +23,7 @@ const Home = () => {
             <h1 className="hero-title">{t('hero.title')}</h1>
             <p className="hero-desc">{t('hero.desc')}</p>
             <div className="hero-buttons">
-              <Link to="/contacto" className="btn btn-primary">{t('hero.cta1')}</Link>
+              <Link to="/contacto#contact-form" className="btn btn-primary">{t('hero.cta1')}</Link>
               <Link to="/servicios" className="btn btn-secondary">{t('hero.cta2')}</Link>
             </div>
           </div>
@@ -130,7 +130,7 @@ const Home = () => {
           <div className="cta-content">
             <h2>{t('cta.title')}</h2>
             <p>{t('cta.desc')}</p>
-            <Link to="/contacto" className="btn btn-primary">{t('cta.button')}</Link>
+            <Link to="/contacto#contact-form" className="btn btn-primary">{t('cta.button')}</Link>
           </div>
         </div>
       </section>

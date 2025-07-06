@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useLocation } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Logo from '../components/Logo';
@@ -16,6 +17,24 @@ const Contacto = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const { t } = useTranslation();
+  const location = useLocation();
+
+  // Scroll to contact form when hash is present
+  useEffect(() => {
+    if (location.hash === '#contact-form') {
+      const timer = setTimeout(() => {
+        const element = document.getElementById('contact-form');
+        if (element) {
+          element.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      }, 100); // Small delay to ensure page is fully rendered
+      
+      return () => clearTimeout(timer);
+    }
+  }, [location]);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -116,7 +135,7 @@ const Contacto = () => {
             </div>
 
             {/* RIGHT COLUMN - CONTACT FORM */}
-            <div className="contact-form-container">
+            <div className="contact-form-container" id="contact-form">
               <h2>{t('contact.form.title')}</h2>
               <p>{t('contact.form.desc')}</p>
               

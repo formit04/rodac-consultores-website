@@ -112,7 +112,7 @@ const Servicios = () => {
           <div className="cta-content">
             <h2>{t('servicesPage.cta.title')}</h2>
             <p>{t('servicesPage.cta.desc')}</p>
-            <Link to="/contacto" className="btn btn-primary">
+            <Link to="/contacto#contact-form" className="btn btn-primary">
               {t('servicesPage.cta.button')}
             </Link>
           </div>
