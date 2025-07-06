@@ -10,11 +10,11 @@ const Nosotros = () => {
   return (
     <div className="app">
       <Header />
-      <div className="brand-rect"></div>
       
       {/* HERO SECTION */}
       <section className="page-hero nosotros-hero">
         <div className="container">
+          <div className="brand-rect"></div>
           <div className="hero-content">
             <h1>{t('about.hero.title')}</h1>
             <p>{t('about.hero.desc')}</p>
