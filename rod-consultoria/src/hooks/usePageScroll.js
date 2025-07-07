@@ -16,7 +16,7 @@ const usePageScroll = () => {
     }
 
     // Skip auto-scroll for chat page to avoid disrupting chat interface
-    if (location.pathname === '/chat24') {
+    if (location.pathname === '/rodac-ai') {
       return;
     }
 

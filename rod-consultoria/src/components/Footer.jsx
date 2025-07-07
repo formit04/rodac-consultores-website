@@ -30,7 +30,7 @@ const Footer = () => {
             <ul>
               <li><Link to="/contacto">Contacto</Link></li>
               <li><Link to="/nosotros">Sobre Nosotros</Link></li>
-              <li><Link to="/chat24">{t('nav.aiConsultant')}</Link></li>
+              <li><Link to="/rodac-ai">{t('nav.aiConsultant')}</Link></li>
               <li><Link to="/blog">Blog</Link></li>
             </ul>
           </div>

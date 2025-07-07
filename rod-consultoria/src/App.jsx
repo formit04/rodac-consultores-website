@@ -39,9 +39,10 @@ function App() {
         <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/servicios" element={<Servicios />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/chat24" element={<AIConsultant />} />
-        <Route path="/czat24" element={<Navigate to="/chat24" replace />} />
-        <Route path="/ai-consultant" element={<Navigate to="/chat24" replace />} />
+        <Route path="/rodac-ai" element={<AIConsultant />} />
+        <Route path="/chat24" element={<Navigate to="/rodac-ai" replace />} />
+        <Route path="/czat24" element={<Navigate to="/rodac-ai" replace />} />
+        <Route path="/ai-consultant" element={<Navigate to="/rodac-ai" replace />} />
         <Route path="/contacto" element={<Contacto />} />
       </Routes>
       <FloatingContact />

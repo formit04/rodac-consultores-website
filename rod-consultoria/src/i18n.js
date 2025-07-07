@@ -10,7 +10,7 @@ const resources = {
         services: 'Servicios',
         blog: 'Blog',
         contact: 'Contacto',
-        aiConsultant: 'Chat24',
+        aiConsultant: 'Rodac AI',
         cta: 'Agendar Consulta'
       },
       hero: {
@@ -290,7 +290,7 @@ const resources = {
       },
       aiConsultant: {
         hero: {
-          title: 'Chat24 - Consultor Especializado',
+          title: 'Rodac AI - Consultor Especializado',
           desc: 'Obtén respuestas expertas sobre contabilidad y fiscalidad mexicana las 24 horas del día. Nuestro asistente está especializado en normativas del SAT, IMSS e INFONAVIT.'
         },
         chat: {
@@ -330,7 +330,7 @@ const resources = {
         services: 'Services',
         blog: 'Blog',
         contact: 'Contact',
-        aiConsultant: 'Chat24',
+        aiConsultant: 'Rodac AI',
         cta: 'Book a Consultation'
       },
       hero: {
@@ -610,7 +610,7 @@ const resources = {
       },
       aiConsultant: {
         hero: {
-          title: 'Chat24 - Specialized Consultant',
+          title: 'Rodac AI - Specialized Consultant',
           desc: 'Get expert answers about Mexican accounting and taxation 24/7. Our assistant specializes in SAT, IMSS and INFONAVIT regulations.'
         },
         chat: {
